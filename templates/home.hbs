@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Brewery List</h1>
+    
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>State</th>
+        <th>address</th>
+        <th>Website</th>
+        <th>Review</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each temp}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.phone}}</td>
+        <td>{{this.city}}</td>
+        <td>{{this.state}}</td>
+        <td>{{this.address}}</td>
+        <td>{{this.website}}</td>
+        <td><a href="/review">Create or Read review</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>
