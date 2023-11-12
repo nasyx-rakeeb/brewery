@@ -39,8 +39,7 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 app.get('/', (req, res) => {
-  return res.status(200).send("Hi")
-    //res.render('login')
+    res.render('login')
 })
 
 app.get('/review', (req, res) => {
