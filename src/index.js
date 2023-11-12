@@ -27,7 +27,7 @@ const tempelatePath = path.join(__dir, '../views')
 const publicPath = path.join(__dir, '../public')
 //console.log(publicPath);
 
-app.set("views", join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 app.engine('hbs', engine(
     {defaultLayout:false}
 ));
