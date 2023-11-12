@@ -215,7 +215,6 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 
   mongoose.connect(uri)
-  //mongoose.connect("mongodb://localhost:27017/brewery")
 .then(() =>{
     console.log("mongodb connected")
 })

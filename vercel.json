@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.mjs",  // Update the file extension here
+      "src": "src/index.js",  // Update the file extension here
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/index.mjs"  // Update the file extension here as well
+      "dest": "src/index.js"  // Update the file extension here as well
     }
   ]
 }
