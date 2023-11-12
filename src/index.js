@@ -16,7 +16,7 @@ import {engine} from 'express-handlebars';
 import bodyParser from "body-parser";
 //const uri = "mongodb+srv://sutirthasen:obito123@cluster0.yx7nmz5.mongodb.net/?retryWrites=true&w=majority";
 var uri = process.env.MONGODB_URI;
-var port = process.env.PORT
+var port = process.env.PORT || 3000
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 const __dir = path.dirname(fileURLToPath(import.meta.url));
