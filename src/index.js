@@ -27,11 +27,11 @@ const tempelatePath = path.join(__dir, '../views')
 const publicPath = path.join(__dir, '../public')
 //console.log(publicPath);
 
+app.set("views", join(__dirname, "views"));
 app.engine('hbs', engine(
     {defaultLayout:false}
 ));
 app.set('view engine', 'hbs')
-app.set('views', tempelatePath)
 app.use(express.static(publicPath))
 
 
