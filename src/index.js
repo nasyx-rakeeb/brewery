@@ -223,3 +223,5 @@ app.listen(port, () => {
     console.log("failed to connect")
 })
 });
+
+module.exports = app;
