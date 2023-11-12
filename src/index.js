@@ -39,8 +39,7 @@ app.get('/signup', (req, res) => {
     res.render('signup')
 })
 app.get('/', (req, res) => {
-  return res.status(200).json({"h": "ok"})
-    //res.render('login')
+    res.render('login')
 })
 
 app.get('/review', (req, res) => {
@@ -211,6 +210,10 @@ app.post('/login', async (req, res) => {
 
 
 })
+
+app.get('*', (req, res) => {
+    res.status(404).send('Not Found');
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
