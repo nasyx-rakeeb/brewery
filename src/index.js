@@ -23,7 +23,7 @@ const __dir = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 //node version 16.17.1
-const tempelatePath = path.join(__dirname, '../views')
+const tempelatePath = path.join(__dir, '../views')
 const publicPath = path.join(__dir, '../public')
 //console.log(publicPath);
 
