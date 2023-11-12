@@ -32,7 +32,7 @@ app.engine('hbs', engine(
     {defaultLayout:false}
 ));
 app.set('view engine', 'hbs')
-app.use(express.static(publicPath))
+app.use(express.static(path.join(__dirname, "public")))
 
 
 app.get('/signup', (req, res) => {
