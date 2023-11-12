@@ -2,11 +2,11 @@
   "name": "brewery",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/index",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.mjs"
   },
   "author": "",
   "license": "ISC",
